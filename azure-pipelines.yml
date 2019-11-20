@@ -14,12 +14,8 @@ steps:
   inputs:
     scriptSource: 'filePath'
     scriptPath: 'main.py'
-- task: PythonScript@0
-  inputs:
-    scriptSource: 'filePath'
-    scriptPath: 'akshyua.py'
 
-- task: PythonScript@0
+- task: DockerInstaller@0
   inputs:
-    scriptSource: 'inline'
-    script: 'print("hello")'
+    dockerVersion: '17.09.0-ce'
+
