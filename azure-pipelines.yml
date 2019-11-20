@@ -14,3 +14,7 @@ steps:
   inputs:
     scriptSource: 'filePath'
     scriptPath: 'main.py'
+- task: PythonScript@0
+  inputs:
+    scriptSource: 'filePath'
+    scriptPath: 'akshyua.py'
