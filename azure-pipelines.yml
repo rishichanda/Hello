@@ -15,9 +15,6 @@ steps:
     scriptSource: 'filePath'
     scriptPath: 'main.py'
 
-- task: DockerInstaller@0
-  inputs:
-    dockerVersion: '17.09.0-ce'
 
 - task: CmdLine@2
   inputs:
