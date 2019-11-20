@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'credativ:Debian:8:linux'
+  vmImage: 'ubuntu:latest'
 
 steps:
 - task: PythonScript@0
