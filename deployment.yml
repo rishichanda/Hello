@@ -1,0 +1,13 @@
+---
+- name: Validate Python File  
+  become: true
+  user: ubuntu
+ 
+  tasks: 
+  - name: Create Python3 Env
+    command: python3 -m virtualenv env
+  - name: Activate ENV
+    command: source /env/bin/activate
+  - name: create a python file
+    command: touch main.py
+  
